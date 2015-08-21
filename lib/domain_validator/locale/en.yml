@@ -1,0 +1,10 @@
+en:
+  errors:
+    messages:
+      domain:
+        short: "is invalid as a bare domain name because it is too short"
+        long: "is invalid as a bare domain name because it is too long"
+        protocol: "is invalid as a bare domain name because it includes a protocol seperator (://)"
+        slashes: "is invalid as a bare domain name because it includes forward slashes (/)"
+        dots: "is invalid as a bare domain name because it doesn't contain any dots (.)"
+        invalid: "is an invalid domain"
