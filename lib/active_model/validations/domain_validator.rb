@@ -24,7 +24,7 @@ module ActiveModel
           record.errors.add(attribute, :'domain.short', options)
         elsif value.length > 253
           record.errors.add(attribute, :'domain.long', options)
-        elsif value !~ /\A([a-z0-9]([a-z0-9\-]{0,61}[a-z0-9])?\.)+[a-z]{2,6}\z/
+        elsif value !~ /\A([a-z0-9]([a-z0-9\-]{0,61}[a-z0-9])?\.)+[a-z]{2,}\z/
           record.errors.add(attribute, :'domain.invalid', options)
         elsif value.include?('://')
           record.errors.add(attribute, :'domain.protocol', options)
